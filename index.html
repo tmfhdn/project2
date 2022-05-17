@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Movies | Marvel Cinematic Universe (MCU) | Marvel Studios Films</title>
+</head>
+<style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
+    ul,ol,li {list-style: none;}
+    a {text-decoration: none; color: rgb(255, 255, 255);}
+
+    :root {
+        --main_color_orange: #fa9e1b;
+        --main_color_purple: #020202;
+        --gradient_color: #8d4fff;
+
+        --font_small: 12px;
+        --font_basic: 14px;
+        --font_logo: 30px;
+    }
+
+    #wrap {width: 100%; height: auto;}
+    .container {width: 1140px; max-height: 100%; margin: 0 auto; padding: 0 15px 0 15px; border:1px solid orange}
+
+    #top {width: 100%; height: 800px; position: relative;}
+    #slider {width: 100%; height: 100%; background-color: #ddd;}
+
+    .item1{width:150px; height:70px; margin-left: 20%;}
+    .item2{width:487.5px; height:91%; margin-top: -15%; margin-left: 54.3%; }
+    .author{width:200px; height: 100%; margin-top: 190px;}
+    .user{margin-top: 0%; vertical-align: middle;}
+    .user2{width: 200px; height: 40%; margin: 38%; margin-top: -19.7%;}
+    .user3{width: 100px; height: 100px; margin: 62%; margin-top: -47%; background-color: chartreuse;}
+
+    .item-bg{width:100%; height: 700px; background-image: url(img/m1.png);background-position: center; background-size: contain;}
+
+    .author2{ content: '|';
+    color: #fb802d;
+    margin-left: 85%;
+    margin-top: -16.5%;
+    }
+    .author3{ content: '|';
+    color: #fb802d;
+    margin-left: 51%;
+    margin-top: -10.6%;
+    }
+
+    header#header .button_container {
+    position: absolute;
+    top: 38%;
+    right: 4%;
+    height: 27px;
+    width: 15px;
+    cursor: pointer;
+    z-index: 100;
+    opacity: .9;
+    transition: opacity .25s ease;
+}
+
+
+
+    span{
+    position: relative;
+    top: -14px;
+    color: #fff;
+    right: 5px;
+    background: #fb802d;
+    border-radius: 15px;
+    padding: 1px 5px;
+    font-size: 9px;
+    line-height: 12px;
+}
+    
+    
+    header {width: 100%; height: 180px; position:absolute; top: 0; left: 0;}
+    #topbar {width: 100%; height: 112px; background-color: var(--main_color_purple);}
+    #main_nav {width: 100%; height: 771px; background-color: rgba(53, 10, 78, 0.6);}
+
+    #search {width: 100%; height: 190px; background: linear-gradient(to right, var(--main_color_orange), var(--gradient_color));}
+
+    #intro {width: 100%; height: 500px;}
+
+    #package {width: 100%; height: 300px; background-color: gold;}
+
+    #offer {width: 100%; height: 500px; background-color: #f3f6f9;}
+
+    footer {width: 100%; height: 300px; background-color: var(--main_color_purple);}       
+
+    #footbar {width: 100%; height: 55px; background-color: #1f0733;}
+</style>
+
+<body>
+    <div id="wrap">
+        <div id="top">
+            <div id="slider"></div>
+
+            <header>
+                <div id="topbar">
+                    <div class="item1">
+                        <img src="img/main.png" height="100">
+                    </div>
+                    
+                    <div class="item2">
+                        <div class="author">
+                            <a href="#">Amanda Green</a>
+                            <img src="img/icon0.png" height="39" class="user">
+                            <div class="author2">|</div>
+                        </div>
+
+                        <div class="user2">
+                            <a href="#" class="order">My tickets</a>
+                            <span>3</span>
+                            <div class="author3">|</div>
+                           
+                        </div>
+
+                        <div class="user3">
+                            <img src="img/icon8.png" img src="img/icon9.png" height="32">
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                    
+                    
+                </div>
+
+                <div class="container"></div>
+                <nav id="main_nav">
+                    <div class="item-bg"></div>
+                </nav>
+            </header>
+        </div>
+
+        <div id="search">
+            <div class="container"></div>
+        </div>
+
+        <div id="intro">
+            <div class="container"></div>
+        </div>
+
+        <div id="package">
+            <div class="container"></div>
+        </div>
+
+        <div id="offer">
+            <div class="container"></div>
+        </div>
+
+        <footer>
+            <div class="container"></div>
+        </footer>
+
+        <div id="footbar">
+            <div class="container"></div>
+        </div>
+    </div>
+</body>
+</html>
