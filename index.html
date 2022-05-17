@@ -25,17 +25,19 @@
     .container {width: 1140px; max-height: 100%; margin: 0 auto; padding: 0 15px 0 15px; border:1px solid orange}
 
     #top {width: 100%; height: 800px; position: relative;}
-    #slider {width: 100%; height: 100%; background-color: #ddd;}
+    #slider {width: 100%; height: 100%; background-color: #ddd;  }
 
     .item1{width:150px; height:70px; margin-left: 20%;}
     .item2{width:487.5px; height:91%; margin-top: -11.7%; margin-left: 54.3%; }
+    .item3{width:320px; height: 480px; margin: 12px; background-color: rgb(255, 0, 0);}
     .author{width:200px; height: 100%; margin-top: 190px;}
     .user{margin-top: 0%; vertical-align: middle;}
     .user2{width: 200px; height: 40%; margin: 38%; margin-top: -19.7%;}
-    .user3{width: 100px; height: 100px; margin: 62%; margin-top: -47%; background-color: chartreuse;}
+    .user3{width: 100px; height: 100px; margin: 62%; margin-top: -47%;}
+
+    .Video1{width:100%; height:660px;  background-color: gold;}
 
     .item-bg{width:100%; height: 700px; background-image: url(img/m1.jpg);background-position: center; background-size: contain;}
-
     .author2{ content: '|';
     color: #fb802d;
     margin-left: 85%;
@@ -71,16 +73,17 @@
     padding: 1px 5px;
     font-size: 9px;
     line-height: 12px;
-}
-    
+    }
+
     
     header {width: 100%; height: 180px; position:absolute; top: 0; left: 0;}
     #topbar {width: 100%; height: 112px; background-color: var(--main_color_purple);}
-    #main_nav {width: 100%; height: 771px; background-color: rgba(53, 10, 78, 0.6);}
+    #main_nav {width: 100%; height: 771px; background-color: aliceblue;}
+    .text1{width: 100%; height: 100px; margin-top: -3.8%; font-size: 25px; text-align: center; }
 
-    #search {width: 100%; height: 190px; background: linear-gradient(to right, var(--main_color_orange), var(--gradient_color));}
+    #search {width: 100%; height: 630px; margin: 3.5%; background: linear-gradient(to right, var(), var());  display: flex;}
 
-    #intro {width: 100%; height: 500px;}
+    #intro {width: 100%; height: 1708px; background-color: #8d4fff;}
 
     #package {width: 100%; height: 300px; background-color: gold;}
 
@@ -113,11 +116,13 @@
                             <a href="#" class="order">My tickets</a>
                             <span>3</span>
                             <div class="author3">|</div>
+                            
                            
                         </div>
 
                         <div class="user3">
-                            <img src="img/icon8.png" img src="img/icon9.png" height="32">
+                            <img src="img/icon9.png" height="32">
+                            <img src="img/icon8.png" height="32">
                         </div>
 
 
@@ -132,17 +137,46 @@
                 </div>
 
                 <div class="container"></div>
+
                 <nav id="main_nav">
-                    <div class="item-bg"></div>
+                    <div class="item-bg">
+
+                        <div class="item_ag"></div>
+                    </div>
                 </nav>
+
+                <div class="text1">
+                    <h1>New Movie</h1>
+                    
+                </div>
+
             </header>
         </div>
 
         <div id="search">
-            <div class="container"></div>
+            <div class="item3"><img src="img/m2.jpg"></div>
+            <div class="item3"><img src="img/m3.jpg"></div>
+            <div class="item3"><img src="img/m4.jpg"></div>
+            <div class="item3"><img src="img/m5.jpg"></div>
+            <div class="item3"><img src="img/m6.jpg"></div>
+
         </div>
 
         <div id="intro">
+            <div class="Video1">
+                <iframe width="1440" height="660"
+                    src="https://www.youtube.com/embed/-V7qhn-SCmI?clip=Ugkx9K-L4SYz8s9FgPivFpk_8nVPy2lSDIra&amp;clipt=EOOaAhjjvwQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                </iframe>
+
+                <audio src="img/Spiderman.mp3" controls autoplay>
+                    
+                </audio>
+        
+            </div>
+            
+
             <div class="container"></div>
         </div>
 
