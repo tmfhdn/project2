@@ -1,15 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <title>Marvel Movies | Marvel Cinematic Universe (MCU) | Marvel Studios Films</title>
+
+   
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="css/packages.min.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
 </head>
+
 <style>
-    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
-    ul,ol,li {list-style: none;}
-    a {text-decoration: none; color: rgb(255, 255, 255);}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    ul,ol,li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
 
     :root {
         --main_color_orange: #fa9e1b;
@@ -21,77 +42,198 @@
         --font_logo: 30px;
     }
 
-    #wrap {width: 100%; height: auto;}
-    .container {width: 1140px; max-height: 100%; margin: 0 auto; padding: 0 15px 0 15px; border:1px solid orange}
-
-    #top {width: 100%; height: 800px; position: relative;}
-    #slider {width: 100%; height: 100%; background-color: #ddd;  }
-
-    .item1{width:150px; height:70px; margin-left: 20%;}
-    .item2{width:487.5px; height:91%; margin-top: -11.7%; margin-left: 54.3%; }
-    .item3{width:320px; height: 480px; margin: 12px; background-color: rgb(255, 0, 0);}
-    .author{width:200px; height: 100%; margin-top: 190px;}
-    .user{margin-top: 0%; vertical-align: middle;}
-    .user2{width: 200px; height: 40%; margin: 38%; margin-top: -19.7%;}
-    .user3{width: 100px; height: 100px; margin: 62%; margin-top: -47%;}
-
-    .Video1{width:100%; height:660px;}
-
-    .item-bg{width:100%; height: 700px; background-image: url(img/m1.jpg);background-position: center; background-size: contain;}
-    .author2{ content: '|';
-    color: #fb802d;
-    margin-left: 85%;
-    margin-top: -16.5%;
+    #wrap {
+        width: 100%;
+        height: auto;
     }
-    .author3{ content: '|';
-    color: #fb802d;
-    margin-left: 51%;
-    margin-top: -10.6%;
+
+    .container {
+        width: 1140px;
+        max-height: 100%;
+        margin: 0 auto;
+        padding: 0 15px 0 15px;
+        border: 1px solid orange
+    }
+
+    #top {
+        width: 100%;
+        height: 800px;
+        position: relative;
+    }
+
+    #slider {
+        width: 100%;
+        height: 100%;
+        background-color: #ddd;
+    }
+
+    .item1 {
+        width: 150px;
+        height: 70px;
+        margin-left: 20%;
+    }
+
+    .item2 {
+        width: 487.5px;
+        height: 91%;
+        margin-top: -11.7%;
+        margin-left: 54.3%;
+    }
+
+    .item3 {
+        width: 320px;
+        height: 480px;
+        margin: 12px;
+        background-color: rgb(255, 0, 0);
+    }
+
+    .author {
+        width: 200px;
+        height: 100%;
+        margin-top: 190px;
+    }
+
+    .user {
+        margin-top: 0%;
+        vertical-align: middle;
+    }
+
+    .user2 {
+        width: 200px;
+        height: 40%;
+        margin: 38%;
+        margin-top: -19.7%;
+    }
+
+    .user3 {
+        width: 100px;
+        height: 100px;
+        margin: 62%;
+        margin-top: -47%;
+    }
+
+    .Video1 {
+        width: 100%;
+        height: 660px;
+    }
+
+    .item-bg {
+        width: 100%;
+        height: 700px;
+        background-image: url(img/m1.jpg);
+        background-position: center;
+        background-size: contain;
+    }
+
+    .author2 {
+        content: '|';
+        color: #fb802d;
+        margin-left: 85%;
+        margin-top: -16.5%;
+    }
+
+    .author3 {
+        content: '|';
+        color: #fb802d;
+        margin-left: 51%;
+        margin-top: -10.6%;
     }
 
     header#header .button_container {
-    position: absolute;
-    top: 38%;
-    right: 4%;
-    height: 27px;
-    width: 15px;
-    cursor: pointer;
-    z-index: 100;
-    opacity: .9;
-    transition: opacity .25s ease;
-}
-
-
-
-    span{
-    position: relative;
-    top: -14px;
-    color: #fff;
-    right: 5px;
-    background: #fb802d;
-    border-radius: 15px;
-    padding: 1px 5px;
-    font-size: 9px;
-    line-height: 12px;
+        position: absolute;
+        top: 38%;
+        right: 4%;
+        height: 27px;
+        width: 15px;
+        cursor: pointer;
+        z-index: 100;
+        opacity: .9;
+        transition: opacity .25s ease;
     }
 
-    
-    header {width: 100%; height: 180px; position:absolute; top: 0; left: 0;}
-    #topbar {width: 100%; height: 112px; background-color: var(--main_color_purple);}
-    #main_nav {width: 100%; height: 771px; background-color: aliceblue;}
-    .text1{width: 100%; height: 100px; margin-top: -3.8%; font-size: 25px; text-align: center; }
 
-    #search {width: 100%; height: 630px; margin: 3.5%; background: linear-gradient(to right, var(), var());  display: flex;}
 
-    #intro {width: 100%; height: 1708px; background-color: #8d4fff;}
+    span {
+        position: relative;
+        top: -14px;
+        color: #fff;
+        right: 5px;
+        background: #fb802d;
+        border-radius: 15px;
+        padding: 1px 5px;
+        font-size: 9px;
+        line-height: 12px;
+    }
 
-    #package {width: 100%; height: 300px; background-color: gold;}
+    .intro {
+        justify-content: center;
+    }
 
-    #offer {width: 100%; height: 500px; background-color: #f3f6f9;}
+    header {
+        width: 100%;
+        height: 180px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
-    footer {width: 100%; height: 300px; background-color: var(--main_color_purple);}       
+    #topbar {
+        width: 100%;
+        height: 112px;
+        background-color: var(--main_color_purple);
+    }
 
-    #footbar {width: 100%; height: 55px; background-color: #1f0733;}
+    #main_nav {
+        width: 100%;
+        height: 771px;
+        background-color: aliceblue;
+    }
+
+    .text1 {
+        width: 100%;
+        height: 100px;
+        margin-top: -3.8%;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #search {
+        width: 100%;
+        height: 630px;
+        margin: 3.5%;
+        background: linear-gradient(to right, var(), var());
+        display: flex;
+    }
+
+    #intro {
+        width: 100%;
+        height: 1708px;
+        background-color: #8d4fff;
+    }
+
+    #package {
+        width: 100%;
+        height: 10%;
+        background-color: gold;
+    }
+
+    #offer {
+        width: 100%;
+        height: 100%;
+        background-color: #f3f6f9;
+    }
+
+    footer {
+        width: 100%;
+        height: 100%;
+        background-color: var(--main_color_purple);
+    }
+
+    #footbar {
+        width: 100%;
+        height: 55px;
+        background-color: #1f0733;
+    }
 </style>
 
 <body>
@@ -104,7 +246,7 @@
                     <div class="item1">
                         <img src="img/main.png" height="100">
                     </div>
-                    
+
                     <div class="item2">
                         <div class="author">
                             <a href="#">Amanda Green</a>
@@ -116,8 +258,8 @@
                             <a href="#" class="order">My tickets</a>
                             <span>3</span>
                             <div class="author3">|</div>
-                            
-                           
+
+
                         </div>
 
                         <div class="user3">
@@ -132,8 +274,8 @@
 
                     </div>
 
-                    
-                    
+
+
                 </div>
 
                 <div class="container"></div>
@@ -145,62 +287,360 @@
                     </div>
                 </nav>
 
-                <div class="text1">
-                    <h1>New Movie</h1>
-                    
-                </div>
+                <section class="section-content">
+                    <div class="container-fluid pv11 ">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3 class="heading text-center">Now playing</h3>
+                                <div class="ticket-carousel pvt85">
+                                    <div class="swiper-container carousel-container movie-images" data-col="5">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="movie-image" data-bg-image="img/m2.jpg">
+                                                    <div class="entry-hover">
+                                                        <div class="entry-actions">
+                                                            <a href="https://vimeo.com/406116916"
+                                                                class="btn-trailers video-player">watch
+                                                                trailer</a>
+                                                            <a href="#order" class="btn-ticket order_ ">buy
+                                                                ticket</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="entry-desc">
 
-            </header>
-        </div>
+                                                        <h3 class="entry-title">Avengers: Endgame</h3>
+                                                        <ul class="entry-date">
+                                                            <li>09 :00</li>
+                                                            <li>11 :50</li>
+                                                            <li>13 :00</li>
+                                                            <li>16 :00</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="movie-image" data-bg-image="img/m3.jpg">
+                                                    <div class="entry-hover">
+                                                        <div class="entry-actions">
+                                                            <a href="https://vimeo.com/677444555"
+                                                                class="btn-trailers video-player">watch
+                                                                trailer</a>
+                                                            <a href="#order" class="btn-ticket order_ ">buy
+                                                                ticket</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="entry-desc">
+                                                        <h3 class="entry-title">Doctor Strange in the Multiverse of Madness</h3>
+                                                        <ul class="entry-date">
+                                                            <li>11 :00</li>
+                                                            <li>13 :50</li>
+                                                            <li>14 :00</li>
+                                                            <li>18 :00</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="movie-image" data-bg-image="img/m4.jpg">
+                                                    <div class="entry-hover">
+                                                        <div class="entry-actions">
+                                                            <a href="https://vimeo.com/646874185"
+                                                                class="btn-trailers video-player">watch
+                                                                trailer</a>
+                                                            <a href="#order" class="btn-ticket order_ ">buy
+                                                                ticket</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="entry-desc">
+                                                        <h3 class="entry-title">Spider-Man: No Way Home</h3>
+                                                        <ul class="entry-date">
+                                                            <li>11 :00</li>
+                                                            <li>13 :50</li>
+                                                            <li>14 :00</li>
+                                                            <li>18 :00</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="movie-image" data-bg-image="img/m5.jpg">
+                                                    <div class="entry-hover">
+                                                        <div class="entry-actions">
+                                                            <a href="https://vimeo.com/538702805"
+                                                                class="btn-trailers video-player">watch
+                                                                trailer</a>
+                                                            <a href="#order" class="btn-ticket order_ ">buy
+                                                                ticket</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="entry-desc">
+                                                        <h3 class="entry-title">Shang-Chi and the Legend of the Ten Rings</h3>
+                                                        <ul class="entry-date">
+                                                            <li>11 :00</li>
+                                                            <li>13 :50</li>
+                                                            <li>14 :00</li>
+                                                            <li>18 :00</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="movie-image" data-bg-image="img/m6.jpg">
+                                                    <div class="entry-hover">
+                                                        <div class="entry-actions">
+                                                            <a href="https://vimeo.com/324923441"
+                                                                class="btn-trailers video-player">watch
+                                                                trailer</a>
+                                                            <a href="#order" class="btn-ticket order_ ">buy
+                                                                ticket</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="entry-desc">
+                                                        <h3 class="entry-title">Captain Marvel</h3>
+                                                        <ul class="entry-date">
+                                                            <li>11 :00</li>
+                                                            <li>13 :50</li>
+                                                            <li>14 :00</li>
+                                                            <li>18 :00</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="movie-image" data-bg-image="img/m7.jpg">
+                                                    <div class="entry-hover">
+                                                        <div class="entry-actions">
+                                                            <a href="https://vimeo.com/158537730"
+                                                                class="btn-trailers video-player">watch
+                                                                trailer</a>
+                                                            <a href="#order" class="btn-ticket order_ ">buy
+                                                                ticket</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="entry-desc">
+                                                        <h3 class="entry-title">Captain America: Civil War</h3>
+                                                        <ul class="entry-date">
+                                                            <li>11 :00</li>
+                                                            <li>13 :50</li>
+                                                            <li>14 :00</li>
+                                                            <li>18 :00</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
 
-        <div id="search">
-            <div class="item3"><img src="img/m2.jpg"></div>
-            <div class="item3"><img src="img/m3.jpg"></div>
-            <div class="item3"><img src="img/m4.jpg"></div>
-            <div class="item3"><img src="img/m5.jpg"></div>
-            <div class="item3"><img src="img/m6.jpg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-content pvb0 bg-cover" data-bg-image="images/coming-bg.jpg">
 
-        </div>
+                        <div id="intro">
+                            <div class="Video1">
 
-        <div id="intro">
-            <div class="Video1">
+                                <p align="middle"><iframe width="1440" height="660"
+                                        src="https://www.youtube.com/embed/-V7qhn-SCmI?clip=Ugkx9K-L4SYz8s9FgPivFpk_8nVPy2lSDIra&amp;clipt=EOOaAhjjvwQ"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                </p>
 
-              <p align="middle"><iframe width="1440" height="660"
-                src="https://www.youtube.com/embed/-V7qhn-SCmI?clip=Ugkx9K-L4SYz8s9FgPivFpk_8nVPy2lSDIra&amp;clipt=EOOaAhjjvwQ"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-              </p>
+                                <audio src="img/Spiderman.mp3" controls autoplay>
 
-                <audio src="img/Spiderman.mp3" controls autoplay>
+                                </audio>
 
-                </audio>
+                                <ul>
+                                    <li>Action</li>
+                                    <li>ActionScience Fiction</li>
+                                    <li>Adventure</li>
+                                </ul>
+                            </div>
 
-                <ul>
-                    <li>Action</li>
-                    <li>ActionScience Fiction</li>
-                    <li>Adventure</li>
-                </ul>
-            </div>
-            
 
-            <div class="container"></div>
-        </div>
+                            <div class="container"></div>
+                        </div>
 
-        <div id="package">
-            <div class="container"></div>
-        </div>
+                        <div id="package">
+                            <div class="container"></div>
+                        </div>
 
-        <div id="offer">
-            <div class="container"></div>
-        </div>
+                        <div id="offer">
+                            <div class="container"></div>
+                        </div>
 
-        <footer>
-            <div class="container"></div>
-        </footer>
 
-        <div id="footbar">
-            <div class="container"></div>
-        </div>
-    </div>
+
+
+
+
+
+
+                        <footer id="footer">
+                            <div class="container footer-container">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-6">
+                                        <div class="widget">
+                                            <h5 class="widget-title">Menu</h5>
+                                            <ul class="menu">
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">ABOUT MARVEL</a></li>
+                                                <li><a href="#">HELP/FAQS</a></li>
+                                                <li><a href="#">CAREERS</a></li>
+                                                <li><a href="#">INTERNSHIPS</a></li>
+                                                <li><a href="#">ADVERTISING</a></li>
+                                                <li><a href="#">DISNEY+</a></li>
+                                                <li><a href="#">MARVELHQ.COM</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="widget">
+                                            <div class="social-links">
+                                                <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                                <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                                <a href="javascript:;"><i class="fa fa-google-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="widget">
+                                            <h5 class="widget-title">Address information</h5>
+                                            <p>
+                                                Marvel Entertainment, LLC
+                                                1290 Avenue of the Americas
+                                                New York, NY 10104
+                                            </p>
+                                            <p>
+                                                <i class="fa fa-mail"></i>whdlswp008@naver.com<br>
+                                                <i class="fa fa-phone"></i> + 888-511-5480
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-6">
+                                        <div class="widget">
+                                            <h5 class="widget-title">Leave a message</h5>
+                                            <form class="contact_form transparent">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <input type="text" class="inputValidation" name="name"
+                                                            placeholder="Name *">
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <input type="text" class="inputValidation" name="email"
+                                                            placeholder="Email *">
+                                                    </div>
+                                                    <div class="col-sm-12 ">
+                                                        <textarea class="inputValidation"
+                                                            placeholder="Message *"></textarea>
+                                                        <button type="submit" class="button fill rectangle">Send to
+                                                            us</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div class="errorMessage"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-footer">
+                                <div class="container">
+                                    <div class="row copyright-text">
+                                        <div class="col-sm-12 text-center">
+                                            <p class="mv3 mvt0">&copy; Copyrights 2022 Tenguu. All rights reserved</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                    <!-- Overlay Search -->
+                    <div id="overlay-search">
+                        <form method="get" action="./">
+                            <input type="text" name="s" placeholder="Search..." autocomplete="off">
+                            <button type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                        <a href="javascript:;" class="close-window"></a>
+                    </div>
+                    <div id="order">
+                        <div class="container">
+                            <div class="row order-content">
+                                <div class="col-sm-8 col-xs-12 seat_content ph0">
+                                    <h2>order a ticket</h2>
+                                    <div class="entry-order-content">
+                                        <form id="msform" name="msform">
+                                            <!-- fieldsets -->
+                                            <fieldset>
+                                                <div class="wpc-content">
+                                                    <h3>location</h3>
+                                                    <select name="location">
+                                                        <option>Tenguu Cinema Tysons corner</option>
+                                                        <option>Tenguu Cinema </option>
+                                                        <option>Tenguu Cinema corner</option>
+                                                        <option>Tenguu Cinema Tysons</option>
+                                                    </select>
+                                                    <h3 class="mt3">Movie</h3>
+                                                    <select>
+                                                        <option>Dead pool</option>
+                                                        <option>THE BATTLE OF ALGIERS (DI ALGERI)</option>
+                                                        <option>Doctor Strange in the Multiverse of Madness</option>
+                                                        <option>Tenguu Cinema Tysons corner</option>
+                                                    </select>
+                                                    <h3 class="mt3">Date</h3>
+                                                    <input type='date' class="datetime" />
+                                                    <h3 class="mt3">TIME</h3>
+                                                    <ul class="order-date">
+                                                        <li><a href="javascript:;"><i>11:50</i></a></li>
+                                                        <li><a href="javascript:;"><i>13:40</i></a></li>
+                                                        <li><a href="javascript:;"><i>16:35</i></a></li>
+                                                        <li><a href="javascript:;"><i>17:30</i></a></li>
+                                                        <li><a href="javascript:;"><i>19:50</i></a></li>
+                                                        <li><a href="javascript:;"><i>21:10</i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <input type="button" name="next" class="next action-button"
+                                                    value="Next" />
+                                            </fieldset>
+                                            <fieldset class="seat-content">
+                                                <div class="wpc-content">
+                                                    <h3 class="seat_title">seat</h3>
+                                                    <div id="seat-map"></div>
+                                                    <div id="legend"></div>
+                                                </div>
+                                                <input type="button" name="previous" class="action-button previous"
+                                                    value="Previous" />
+                                                <input type="submit" name="submit" class="submit action-button"
+                                                    value="Submit" />
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-xs-12 order_sidebar ph0">
+                                    <h2>Your Information</h2>
+                                    <div class="order-details">
+                                        <span> Location:</span>
+                                        <p id="locationp">Tenguu Cinema Tysons corner</p>
+                                        <span>Time:</span>
+                                        <p>2016.3.8 18:30</p>
+                                        <span>Seat: </span>
+                                        <ul id="selected-seats"></ul>
+                                        <div>Tickets: <span id="counter">0</span></div>
+                                        <div>Total: <b>$<span id="total">0</span></b></div>
+                                    </div>
+                                    <a href="javascript:;" class="close-window"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Include jQuery and Scripts -->
+                    <script type="text/javascript" src="js/jquery.min.js"></script>
+                    <script type="text/javascript" src="js/packages.min.js"></script>
+                    <script type="text/javascript" src="js/scripts.min.js"></script>
+                    <!-- jQuery easing plugin -->
 </body>
+
 </html>
