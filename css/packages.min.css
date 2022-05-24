@@ -61,7 +61,6 @@ pre {
 .mfp-wrap {
     z-index: 1043;
     outline: 0 !important;
-    -webkit-backface-visibility: hidden
 }
 
 .mfp-container {
@@ -598,7 +597,6 @@ button {
 
 .swiper-slide {
     -webkit-flex-shrink: 0;
-    -ms-flex: 0 0 auto;
     flex-shrink: 0
 }
 
@@ -1532,7 +1530,7 @@ figure {
 }
 
 .fa-play:before {
-    content: "\f04b"
+    content: "▶︎"
 }
 
 .fa-pause:before {
@@ -5243,7 +5241,8 @@ h1 {
 
 .h2,
 h2 {
-    font-size: 30px
+    font-size: 22px;
+    color: #fb802d ;
 }
 
 .h3,

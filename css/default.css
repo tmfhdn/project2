@@ -2326,7 +2326,7 @@ article.blog-item.single .post-content .info-content .item-info-rate .chart-circ
   float: right;
 }
 article.blog-item.single .post-content .info-content .item-info-rate .wpc-skills {
-  width: 70%;
+  width: 90%;
   padding-left: 10px;
 }
 article.blog-item.single .post-content .info-content .item-info-rate .wpc-skills span {
@@ -2561,7 +2561,7 @@ body {
   font-weight: 100;
   line-height: 30px;
   letter-spacing: 0.2px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 a:focus {
   outline: none;
