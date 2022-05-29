@@ -4,9 +4,10 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-    <title>Marvel Movies | Marvel Cinematic Universe (MCU) | Marvel Studios Films</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 
@@ -55,6 +56,7 @@
         height: 100%;
         margin: 0 auto;
         padding: 0 15px 0 15px;
+        
     }
 
     header {
@@ -85,8 +87,10 @@
     }
 
     .item1 {
-        width: 150px;
-        height: 100px;
+        width: 100%;
+        height: 100%;
+        background-color:rgb(8, 8, 8);
+        margin-left: 60%;
     }
 
     .item2 {
@@ -94,6 +98,8 @@
         height: 50px;
         display: flex;
         justify-content: center;
+        margin-left: 250%;
+        margin-top: -58px;
         /* margin-top: -11.7%;
         margin-left: 54.3%; */
     }
@@ -154,14 +160,14 @@
     .author2 {
         content: '|';
         color: #fb802d;
-        margin-left: 85%;
+        margin-left: 100%;
         margin-top: -16.5%;
     }
 
     .author3 {
         content: '|';
         color: #fb802d;
-        margin-left: 51%;
+        margin-left: 61%;
         margin-top: -10.6%;
     }
 
@@ -320,38 +326,102 @@
     @media (min-width:1030px) {}
 
     @media (min-width:625px) {}
+
+/* ----------------------------------------------- */
+* {
+        margin: 0;
+        padding: 0;
+    }
+
+    #header {
+        width: 100%;
+        height: 100px;
+        font-size: 11px;
+        line-height: 100px;
+        color: #fff;
+        background: #121212;
+        text-align: center;
+    }
+
+    #lnb.fixed {
+        
+           width: 100%;
+    }
+
+    #lnb ul {
+        font-size: 0;
+        background: #000000;
+        width: 100%;
+        height: 120px;
+        position: fixed;
+        z-index: 100;
+        background-image: url(img/.png);
+    }
+
+    #lnb li {
+
+        display: inline-block;
+        vertical-align: top;
+        width: 25%;
+        padding: 10px 0;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #container {
+        width: 100%;
+        height: 2000px;
+        font-size: 20px;
+        background: #dcdcdc;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 100px;
+    }
+
+    .container1{width: 100%; height:100%;}
 </style>
 
 <body>
+
+
+
+
     <div id="wrap">
         <div id="top">
             <header>
-                <div class="container">
-                    <div class="item1">
-                        <img src="img/main.png" height="100">
-                    </div>
-
-                    <div class="item2">
-                        <div class="author">
-                            <a href="#">Amanda Green</a>
-                            <img src="img/icon0.png" height="39" class="user">
-                            <div class="author2">|</div>
-                        </div>
-
-                        <div class="user2">
-                            <a href="#" class="order">My tickets</a>
-                            <span>3</span>
-                            <div class="author3">|</div>
-
-
-                        </div>
-
-                        <div class="user3">
-                            <img src="img/icon9.png" height="32">
-                            <img src="img/icon8.png" height="32">
-                        </div>
-
-                    </div>
+                <div id="lnb">
+                    <ul>
+                        <li>
+                            <div class="container1">
+                                <div class="item1">
+                                    <img src="img/main.png" height="100">
+                                </div>
+            
+                                <div class="item2">
+                                    <div class="author">
+                                        <a href="#">Amanda Green</a>
+                                        <img src="img/icon0.png" height="39" class="user">
+                                        <div class="author2">|</div>
+                                    </div>
+            
+                                    <div class="user2">
+                                        <a href="#" class="order">My tickets</a>
+                                        <span>3</span>
+                                        <div class="author3">|</div>
+            
+            
+                                    </div>
+            
+                                    <div class="user3">
+                                        <img src="img/icon9.png" height="32">
+                                        <img src="img/icon8.png" height="32">
+                                    </div>
+            
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </header>
 
@@ -627,13 +697,13 @@
                 <div class="container pvt80">
                     <div class="row">
                         <div class="col-md-12">
-                            <ul id="slider_coming" class="flexslider">
+                            <div id="slider_coming" class="flexslider">
                                 <ul class="slides">
                                     <li>
                                         <article class="product-item hover-dark">
                                             <div class="featured-image bg-cover">
-                                                <img src="img/b1.jpg" alt="image" />
-                                                <a href="https://vimeo.com/329003013" class="video-player"><i
+                                                <img src="img/b1.jpg" alt="img" />
+                                                <a href="https://vimeo.com/370164526" class="video-player"><i
                                                         class="fa fa-play"></i></a>
                                             </div>
                                             <div class="entry-title">
@@ -643,14 +713,14 @@
                                                     <li>Adventure</li>
                                                 </ul>
                                                 <a href="javascript:;" class="title">Avengers: Endgame </a>
-                                               
+                                                <div class="entry-date"><span>5 May 2019</span></div>
                                                 <div class="social-links">
                                                     <a href="javascript:;"><i class="fa fa-facebook"></i></a>
                                                     <a href="javascript:;"><i class="fa fa-twitter"></i></a>
                                                     <a href="javascript:;"><i class="fa fa-instagram"></i></a>
                                                 </div>
                                             </div>
-
+            
                                             <div class="entry-desc">
                                                 <div class="row mh0">
                                                     <div class="col-md-2 col-sm-3 col-xs-12 comming_movie ph0">
@@ -658,38 +728,43 @@
                                                     </div>
                                                     <div class="col-md-8 col-sm-7 col-xs-12 entry-text phl3">
                                                         <h3>synopsis</h3>
-                                                        <p>Avengers: Endgame is a 2019 American superhero film based on Marvel Comics' Avengers, produced by Marvel Studios, and
-                                                        published by Walt Disney Studios Motion Pictures. The film is the last Avengers series to follow the 2012 film Avengers,
-                                                        the 2015 film Avengers: Age of Ultron, and the 2018 film Infinity War, and the 22nd installment of the Marvel Cinematic
-                                                        Universe (MCU). Directed by Anthony Russo and Joruso, the screenplay was co-written by Christopher Marcus and Stephen
-                                                        McFeely, and features more actors and ensemble casts than previous MCU films. In the film, surviving members of the
-                                                        Avengers attempt to undo the destruction Thanos caused in Infinity War.</p>
+                                                        <p>Tony and Nebula, who have barely survived the loss of all their companions on the planet Titan, wander into space to get
+                                                        to Earth on the failed Guardians of the Galaxy spacecraft Benata. With only one place to lean on, they have become close
+                                                        enough to play a small game (5), take care of each other, and give each other support.[6] Although Thanos treated the
+                                                        wounds, the ship ran out of fuel and food, and even the most important oxygen will run out by tomorrow morning. Tony
+                                                        leaves a will to Pepper on his damaged suit helmet [7] and then goes to sleep, which may be his last, Nebula makes him
+                                                        comfortable and then quietly retreats. But as soon as Tony fell asleep, a bright glow suddenly came out of the window,
+                                                        and Tony opened his eyes and Carol, who was shining, was looking at him.[8]
+                                                        
+                                                        Tony and Nebula, who miraculously returned to Earth by Carol's power, are reunited with their surviving colleagues,
+                                                        Steve, Natasha, Bruce, Rose, Thor, Rocket, and Pepper. Steve runs to help Tony, and the rocket approaches Nebula, who
+                                                        was sitting quietly, and holds her hand silently.</p>
                                                         <a href="javascript:;" class="btn order">pre order</a>
                                                         <a href="javascript:;" class="btn more mhl20">Read more</a>
                                                     </div>
                                                     <div class="col-md-2 col-sm-2 col-xs-12">
                                                         <div class="wpc-skills animated">
                                                             <div class="skill-block">
-                                                                <h5 class="timer" data-to="70" data-speed="500">8.0 </h5>
-                                                                <h6> - violence</h6>
+                                                                <h5 class="timer" data-to="70" data-speed="500">6.4 </h5>
+                                                                <h6> - Metacritic</h6>
                                                                 <div class="skill-line">
-                                                                    <div class="line-fill" data-width-pb="70%" style="width: 80%;">
+                                                                    <div class="line-fill" data-width-pb="70%" style="width: 70%;">
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="skill-block">
-                                                                <h5 class="timer" data-to="56" data-speed="500"> 8.5 </h5>
-                                                                <h6> - Action</h6>
+                                                                <h5 class="timer" data-to="56" data-speed="500"> 5.5 </h5>
+                                                                <h6> - Photoshop</h6>
                                                                 <div class="skill-line">
-                                                                    <div class="line-fill" data-width-pb="56%" style="width: 85%;">
+                                                                    <div class="line-fill" data-width-pb="56%" style="width: 56%;">
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="skill-block">
-                                                                <h5 class="timer" data-to="70" data-speed="500">6.2 </h5>
-                                                                <h6> - fear</h6>
+                                                                <h5 class="timer" data-to="70" data-speed="500">6.4 </h5>
+                                                                <h6> - Metacritic</h6>
                                                                 <div class="skill-line">
-                                                                    <div class="line-fill" data-width-pb="70%" style="width: 62%;">
+                                                                    <div class="line-fill" data-width-pb="70%" style="width: 70%;">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -698,19 +773,511 @@
                                                 </div>
                                             </div>
                                         </article>
-                                    </ul>
+                                    </li>
+                                    <li>
+                                        <article class="product-item hover-dark">
+                                            <div class="featured-image bg-cover">
+                                                <img src="img/z1.jpg" alt="image" />
+                                                <a href="https://vimeo.com/689400224" class="video-player"><i
+                                                        class="fa fa-play"></i></a>
+                                            </div>
+                                            <div class="entry-title">
+                                                <ul class="subtitle">
+                                                    <li>Action</li>
+                                                    <li>Science Fiction</li>
+                                                    <li>Adventure</li>
+                                                </ul>
+                                                <a href="javascript:;" class="title">Ms. Marvel </a>
+                                                <div class="entry-date"><span>5 May 2022</span></div>
+                                                <div class="social-links">
+                                                    <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                                    <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                                    <a href="javascript:;"><i class="fa fa-instagram"></i></a>
+                                                </div>
+                                            </div>
+            
+                                            <div class="entry-desc">
+                                                <div class="row mh0">
+                                                    <div class="col-md-2 col-sm-3 col-xs-12 comming_movie ph0">
+                                                        <img src="img/q1.jpg" alt="movie">
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-7 col-xs-12 entry-text phl3">
+                                                        <h3>synopsis</h3>
+                                                        <p>Kamala Khan (Yeon: Iman Bellani), who likes the Avengers and especially admires Captain Marvel. She is a very ordinary
+                                                        high school girl who is absorbed in her studies, hobbies, and love, but she is not familiar with her surroundings at
+                                                        home and at school and is struggling to find her place... "With super power, life will be easier. What I've been
+                                                        delusional about is real!" Kamala has acquired the power of a hero who has been dreaming. This will make life more and
+                                                        more successful... Unlike the delusional world, he faces the greatest threat he has to face as a hero because he has
+                                                        great power in addition to various problems at home, school, and social life.</p>
+                                                        <a href="javascript:;" class="btn order">pre order</a>
+                                                        <a href="javascript:;" class="btn more mhl20">Read more</a>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="wpc-skills animated">
+                                                            <div class="skill-block">
+                                                                <h5 class="timer" data-to="70" data-speed="500">6.4 </h5>
+                                                                <h6> - Metacritic</h6>
+                                                                <div class="skill-line">
+                                                                    <div class="line-fill" data-width-pb="70%" style="width: 70%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="skill-block">
+                                                                <h5 class="timer" data-to="56" data-speed="500"> 5.5 </h5>
+                                                                <h6> - Photoshop</h6>
+                                                                <div class="skill-line">
+                                                                    <div class="line-fill" data-width-pb="56%" style="width: 56%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="skill-block">
+                                                                <h5 class="timer" data-to="70" data-speed="500">6.4 </h5>
+                                                                <h6> - Metacritic</h6>
+                                                                <div class="skill-line">
+                                                                    <div class="line-fill" data-width-pb="70%" style="width: 70%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="product-item hover-dark">
+                                            <div class="featured-image bg-cover">
+                                                <img src="img/z2.jpg" alt="image" />
+                                                <a href="https://vimeo.com/533755727" class="video-player"><i
+                                                        class="fa fa-play"></i></a>
+                                            </div>
+                                            <div class="entry-title">
+                                                <ul class="subtitle">
+                                                    <li>Action</li>
+                                                    <li>Science Fiction</li>
+                                                    <li>Adventure</li>
+                                                </ul>
+                                                <a href="javascript:;" class="title">She-Hulk: Attorney at Law </a>
+                                                <div class="entry-date"><span>5 May 2022</span></div>
+                                                <div class="social-links">
+                                                    <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                                    <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                                    <a href="javascript:;"><i class="fa fa-instagram"></i></a>
+                                                </div>
+                                            </div>
+            
+                                            <div class="entry-desc">
+                                                <div class="row mh0">
+                                                    <div class="col-md-2 col-sm-3 col-xs-12 comming_movie ph0">
+                                                        <img src="img/q2.jpg" alt="movie">
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-7 col-xs-12 entry-text phl3">
+                                                        <h3>synopsis</h3>
+                                                        <p>According to rumors, exactly two solo films will be made, the first one depicting Hulk leaving the Earth to find his son
+                                                        and becoming the original "World Breaker Hulk" after a series of processes. In the second installment, many heroes
+                                                        gather to argue whether to kill the World Breaker Hulk, Captain America, Captain Marvel, Monica Lamborgh, Doctor
+                                                        Strange, Mighty Thor-turned Jane Foster, Hawkeye, Kate Bishop, Yelena Bellova, Warmer, Spider-Man, Songbird, Myster's
+                                                        Marvel, Warbeard, Horror Night.</p>
+                                                        <a href="javascript:;" class="btn order">pre order</a>
+                                                        <a href="javascript:;" class="btn more mhl20">Read more</a>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="wpc-skills animated">
+                                                            <div class="skill-block">
+                                                                <h5 class="timer" data-to="70" data-speed="500">6.4 </h5>
+                                                                <h6> - Metacritic</h6>
+                                                                <div class="skill-line">
+                                                                    <div class="line-fill" data-width-pb="70%" style="width: 70%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="skill-block">
+                                                                <h5 class="timer" data-to="56" data-speed="500"> 5.5 </h5>
+                                                                <h6> - Photoshop</h6>
+                                                                <div class="skill-line">
+                                                                    <div class="line-fill" data-width-pb="56%" style="width: 56%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="skill-block">
+                                                                <h5 class="timer" data-to="70" data-speed="500">6.4 </h5>
+                                                                <h6> - Metacritic</h6>
+                                                                <div class="skill-line">
+                                                                    <div class="line-fill" data-width-pb="70%" style="width: 70%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="product-item hover-dark">
+                                            <div class="featured-image bg-cover">
+                                                <img src="images/carousel/movie-4.jpg" alt="image" />
+                                                <a href="https://vimeo.com/28177848" class="video-player"><i
+                                                        class="fa fa-play"></i></a>
+                                            </div>
+                                            <div class="entry-title">
+                                                <ul class="subtitle">
+                                                    <li>Action</li>
+                                                    <li>Science Fiction</li>
+                                                    <li>Adventure</li>
+                                                </ul>
+                                                <a href="javascript:;" class="title">Lord of the rings: The return of the kings </a>
+                                                <div class="entry-date"><span>5 May 2022</span></div>
+                                                <div class="social-links">
+                                                    <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                                    <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                                    <a href="javascript:;"><i class="fa fa-instagram"></i></a>
+                                                </div>
+                                            </div>
+            
+                                            <div class="entry-desc">
+                                                <div class="row mh0">
+                                                    <div class="col-md-2 col-sm-3 col-xs-12 comming_movie ph0">
+                                                        <img src="images/carousel/movie-4.jpg" alt="movie">
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-7 col-xs-12 entry-text phl3">
+                                                        <h3>synopsis</h3>
+                                                        <p>Authoritatively pontificate error-free deliverables and technically sound
+                                                            mindshare. Quickly build ong-term high-impact outsourcing vis-a-vis
+                                                            best-of-breed communities. Collaboratively disseminate prospective
+                                                            supply chains after corporate "outside the box" thinking. Rapidiously
+                                                            promote interactive metrics for ethical materials. Professionally
+                                                            repurpose market-driven applications with...</p>
+                                                        <a href="javascript:;" class="btn order">pre order</a>
+                                                        <a href="javascript:;" class="btn more mhl20">Read more</a>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="wpc-skills animated">
+                                                            <div class="skill-block">
+                                                                <h5 class="timer" data-to="70" data-speed="500">6.4 </h5>
+                                                                <h6> - Metacritic</h6>
+                                                                <div class="skill-line">
+                                                                    <div class="line-fill" data-width-pb="70%" style="width: 70%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="skill-block">
+                                                                <h5 class="timer" data-to="56" data-speed="500"> 5.5 </h5>
+                                                                <h6> - Photoshop</h6>
+                                                                <div class="skill-line">
+                                                                    <div class="line-fill" data-width-pb="56%" style="width: 56%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="skill-block">
+                                                                <h5 class="timer" data-to="70" data-speed="500">6.4 </h5>
+                                                                <h6> - Metacritic</h6>
+                                                                <div class="skill-line">
+                                                                    <div class="line-fill" data-width-pb="70%" style="width: 70%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="product-item hover-dark">
+                                            <div class="featured-image bg-cover">
+                                                <img src="images/carousel/movie-5.jpg" alt="image" />
+                                                <a href="https://vimeo.com/28177848" class="video-player"><i
+                                                        class="fa fa-play"></i></a>
+                                            </div>
+                                            <div class="entry-title">
+                                                <ul class="subtitle">
+                                                    <li>Action</li>
+                                                    <li>Science Fiction</li>
+                                                    <li>Adventure</li>
+                                                </ul>
+                                                <a href="javascript:;" class="title">Lord of the rings: The return of the kings </a>
+                                                <div class="entry-date"><span>5 May 2017</span></div>
+                                                <div class="social-links">
+                                                    <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                                    <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                                    <a href="javascript:;"><i class="fa fa-instagram"></i></a>
+                                                </div>
+                                            </div>
+            
+                                            <div class="entry-desc">
+                                                <div class="row mh0">
+                                                    <div class="col-md-2 col-sm-3 col-xs-12 comming_movie ph0">
+                                                        <img src="images/carousel/movie-5.jpg" alt="movie">
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-7 col-xs-12 entry-text phl3">
+                                                        <h3>synopsis</h3>
+                                                        <p>Authoritatively pontificate error-free deliverables and technically sound
+                                                            mindshare. Quickly build ong-term high-impact outsourcing vis-a-vis
+                                                            best-of-breed communities. Collaboratively disseminate prospective
+                                                            supply chains after corporate "outside the box" thinking. Rapidiously
+                                                            promote interactive metrics for ethical materials. Professionally
+                                                            repurpose market-driven applications with...</p>
+                                                        <a href="javascript:;" class="btn order">pre order</a>
+                                                        <a href="javascript:;" class="btn more mhl20">Read more</a>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="wpc-skills animated">
+                                                            <div class="skill-block">
+                                                                <h5 class="timer" data-to="70" data-speed="500">6.4 </h5>
+                                                                <h6> - Metacritic</h6>
+                                                                <div class="skill-line">
+                                                                    <div class="line-fill" data-width-pb="70%" style="width: 70%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="skill-block">
+                                                                <h5 class="timer" data-to="56" data-speed="500"> 5.5 </h5>
+                                                                <h6> - Photoshop</h6>
+                                                                <div class="skill-line">
+                                                                    <div class="line-fill" data-width-pb="56%" style="width: 56%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="skill-block">
+                                                                <h5 class="timer" data-to="70" data-speed="500">6.4 </h5>
+                                                                <h6> - Metacritic</h6>
+                                                                <div class="skill-line">
+                                                                    <div class="line-fill" data-width-pb="70%" style="width: 70%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="product-item hover-dark">
+                                            <div class="featured-image bg-cover">
+                                                <img src="images/carousel/movie-6.jpg" alt="image" />
+                                                <a href="https://vimeo.com/28177848" class="video-player"><i
+                                                        class="fa fa-play"></i></a>
+                                            </div>
+                                            <div class="entry-title">
+                                                <ul class="subtitle">
+                                                    <li>Action</li>
+                                                    <li>Science Fiction</li>
+                                                    <li>Adventure</li>
+                                                </ul>
+                                                <a href="javascript:;" class="title">Lord of the rings: The return of the kings </a>
+                                                <div class="entry-date"><span>5 May 2017</span></div>
+                                                <div class="social-links">
+                                                    <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                                    <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                                    <a href="javascript:;"><i class="fa fa-instagram"></i></a>
+                                                </div>
+                                            </div>
+            
+                                            <div class="entry-desc">
+                                                <div class="row mh0">
+                                                    <div class="col-md-2 col-sm-3 col-xs-12 comming_movie ph0">
+                                                        <img src="images/carousel/movie-6.jpg" alt="movie">
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-7 col-xs-12 entry-text phl3">
+                                                        <h3>synopsis</h3>
+                                                        <p>Authoritatively pontificate error-free deliverables and technically sound
+                                                            mindshare. Quickly build ong-term high-impact outsourcing vis-a-vis
+                                                            best-of-breed communities. Collaboratively disseminate prospective
+                                                            supply chains after corporate "outside the box" thinking. Rapidiously
+                                                            promote interactive metrics for ethical materials. Professionally
+                                                            repurpose market-driven applications with...</p>
+                                                        <a href="javascript:;" class="btn order">pre order</a>
+                                                        <a href="javascript:;" class="btn more mhl20">Read more</a>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2 col-xs-12">
+                                                        <div class="wpc-skills animated">
+                                                            <div class="skill-block">
+                                                                <h5 class="timer" data-to="70" data-speed="500">6.4 </h5>
+                                                                <h6> - Metacritic</h6>
+                                                                <div class="skill-line">
+                                                                    <div class="line-fill" data-width-pb="70%" style="width: 70%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="skill-block">
+                                                                <h5 class="timer" data-to="56" data-speed="500"> 5.5 </h5>
+                                                                <h6> - Photoshop</h6>
+                                                                <div class="skill-line">
+                                                                    <div class="line-fill" data-width-pb="56%" style="width: 56%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="skill-block">
+                                                                <h5 class="timer" data-to="70" data-speed="500">6.4 </h5>
+                                                                <h6> - Metacritic</h6>
+                                                                <div class="skill-line">
+                                                                    <div class="line-fill" data-width-pb="70%" style="width: 70%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </li>
+            
                                 </ul>
                             </div>
                         </div>
                     </div>
+                    <div id="carousel_coming" class="flexslider">
+                        <ul class="slides">
+                            <li class="thumb_item bg-cover">
+                                <div class="movie-image">
+                                    <a href="#" class="btn fill">Selected</a>
+                                    <img src="img/m2.jpg" class="wpc_img" alt="image" />
+                                    <div class="entry-desc">
+                                        <div class="rating">
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                        </div>
+                                        <h3 class="entry-title">Avengers: Endgame</h3>
+                                        <ul class="entry-date">
+                                            <li>5 May 2019</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="thumb_item bg-cover">
+                                <div class="movie-image">
+                                    <a href="#" class="btn fill">Selected</a>
+                                    <img src="img/q1.jpg" class="wpc_img" alt="image" />
+                                    <div class="entry-desc">
+                                        <div class="rating">
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                        </div>
+                                        <h3 class="entry-title">Ms. Marvel</h3>
+                                        <ul class="entry-date">
+                                            <li>5 May 2022</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="thumb_item bg-cover">
+                                <div class="movie-image">
+                                    <a href="#" class="btn fill">Selected</a>
+                                    <img src="img/q2.jpg" class="wpc_img" alt="image" />
+                                    <div class="entry-desc">
+                                        <div class="rating">
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                        </div>
+                                        <h3 class="entry-title">She-Hulk: Attorney at Law</h3>
+                                        <ul class="entry-date">
+                                            <li>5 May 2022</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="thumb_item bg-cover">
+                                <div class="movie-image">
+                                    <a href="#" class="btn fill">Selected</a>
+                                    <img src="images/carousel/movie-4.jpg" class="wpc_img" alt="image" />
+                                    <div class="entry-desc">
+                                        <div class="rating">
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                        </div>
+                                        <h3 class="entry-title">Td</h3>
+                                        <ul class="entry-date">
+                                            <li>5 May 2022</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="thumb_item bg-cover">
+                                <div class="movie-image">
+                                    <a href="#" class="btn fill">Selected</a>
+                                    <img src="images/carousel/movie-5.jpg" class="wpc_img" alt="image" />
+                                    <div class="entry-desc">
+                                        <div class="rating">
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                        </div>
+                                        <h3 class="entry-title">The Mountian</h3>
+                                        <ul class="entry-date">
+                                            <li>5 May 2022</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="thumb_item bg-cover">
+                                <div class="movie-image">
+                                    <a href="#" class="btn fill">Selected</a>
+                                    <img src="images/carousel/movie-6.jpg" class="wpc_img" alt="image" />
+                                    <div class="entry-desc">
+                                        <div class="rating">
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                            <input name="stars" type="radio">
+                                            <label>☆</label>
+                                        </div>
+                                        <h3 class="entry-title">The Mountian</h3>
+                                        <ul class="entry-date">
+                                            <li>5 May 2022</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            
-                
-            
-
-            
-
         </div>
 
         <div class="featured-image bg-cover">
@@ -924,7 +1491,41 @@
         <script type="text/javascript" src="js/scripts.min.js"></script>
         <!-- jQuery easing plugin -->
     </div>
+    <script type="text/javascript">
+        $(function () {
+            var lnb = $("#lnb").offset().top;
 
+            $(window).scroll(function () {
+
+                var window = $(this).scrollTop();
+
+                if (lnb <= window) {
+                    $("#lnb").addClass("fixed");
+                } else {
+                    $("#lnb").removeClass("fixed");
+                }
+            })
+        });
+
+
+        var currentScrollTop = 0;
+		$(document).ready(function () {
+			scrollController();
+			$(window).scroll(function () {
+				scrollController();
+			});
+		});
+		function scrollController() {
+			currentScrollTop = $(window).scrollTop();
+			if (currentScrollTop > 100) {
+				$("#nav").addClass("fixed");
+				$("#nav a").addClass("txtCh");
+			} else {
+				$("#nav").removeClass("fixed");
+				$("#nav a").removeClass("txtCh");
+			}
+		}
+    </script>
 </body>
 
 </html>
