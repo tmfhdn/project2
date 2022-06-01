@@ -866,6 +866,11 @@ body.sticky-menu.stick #header.menu-top-left #header-search {
     height: 342px;
     margin-left:5%;
   }
+
+
+
+
+
 }
 .comming-slider .swiper-button-prev,
 .comming-slider .swiper-button-next {
@@ -936,6 +941,18 @@ body.sticky-menu.stick #header.menu-top-left #header-search {
   .single-slider .swiper-container .swiper-slide {
     width: 228px;
   }
+
+
+
+
+
+
+
+
+
+
+
+
 }
 .single-slider .swiper-container .swiper-slide .movie-image {
   position: relative;
@@ -1126,12 +1143,12 @@ body.sticky-menu.stick #header.menu-top-left #header-search {
   font-family: Roboto;
   color: #fff;
   opacity: .4;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 300;
   z-index: 2;
 }
 .wpc-skills .skill-line {
-  margin-top: 14px;
+  margin-top: 21px;
   position: relative;
   height: 5px;
   border-radius: 3px;
@@ -2561,8 +2578,8 @@ body {
   font-family: 'Open Sans';
   font-size: 16px;
   font-weight: 100;
-  line-height: 30px;
-  letter-spacing: 0.2px;
+  line-height: 20px;
+  letter-spacing: 2.2px;
   background-color: rgb(255, 255, 255);
 }
 a:focus {
@@ -3562,16 +3579,17 @@ header .container {
     width: 100%;
     height: 100%;
     background-color:rgb(8, 8, 8);
-    margin-left: -30%;
+    margin-left: 36%;
 }
 
 .item2 {
-    width: 487.5px;
+    width: 507.5px;
     height: 50px;
     display: flex;
     justify-content: center;
-    margin-left: 182%;
-    margin-top: -58px;
+    margin-left: 238%;
+    margin-top: -60px;
+    
     /* margin-top: -11.7%;
     margin-left: 54.3%; */
 }
@@ -3597,6 +3615,7 @@ header .container {
 .user2 {
     width: 200px;
     height: 40%;
+    margin:1%;
     /* margin: 38%; */
     /* margin-top: -19.7%; */
 }
@@ -3632,7 +3651,7 @@ header .container {
 .author2 {
     content: '|';
     color: #fb802d;
-    margin-left: 100%;
+    margin-left: 106%;
     margin-top: -16.5%;
 }
 
@@ -3640,7 +3659,7 @@ header .container {
     content: '|';
     color: #fb802d;
     margin-left: 61%;
-    margin-top: -10.6%;
+    margin-top: -9.6%;
 }
 
 header#header .button_container {
@@ -3660,7 +3679,7 @@ header#header .button_container {
 
 span {
     position: relative;
-    top: -14px;
+    top: -22px;
     color: #fff;
     right: 5px;
     background: #fb802d;
@@ -3673,7 +3692,7 @@ span {
 
 #main_nav {
     width: 100%;
-    height: 703px;
+    height: 652px;
     background-color: aliceblue;
 }
 
@@ -3691,7 +3710,8 @@ span {
     width: 100%;
     height: 630px;
     margin: 3.5%;
-    background: linear-gradient(to right, var(), var());
+    background: linear-gradient(to right, var(), var()
+    );
     display: flex;
 }
 
@@ -3736,7 +3756,6 @@ footer {
 .content-box {
     width: 1410px;
     height: 720px;
-    background-color: 10px
 }
 
 .item4{
@@ -3793,11 +3812,6 @@ transition: all 0.25s ease;}
 
 .Endgame2{width:149px; height:37px; margin:3%; margin-left:0; background-color:aqua}
 
-@media (min-width:1200px) {}
-
-@media (min-width:1030px) {}
-
-@media (min-width:625px) {}
 
 /* ----------------------------------------------- */
 
@@ -4203,6 +4217,7 @@ footer#footer .sub-footer .social-links a:hover {
   border-bottom: 2px solid #272727;
   padding-bottom: 70px;
   padding-top: 20px;
+  margin-left: 40px;
 }
 .inner-table {
   display: table;
@@ -4381,6 +4396,7 @@ footer#footer .sub-footer .social-links a:hover {
 .pv12 {
   padding-top: 120px;
   padding-bottom: 120px;
+  text-align: center;
 }
 .pv13 {
   padding-top: 130px;
@@ -4845,15 +4861,141 @@ footer#footer .sub-footer .social-links a:hover {
   #overlay-search form {
     width: 75%;
   }
+  ul,
+  ol,
+  li {
+      list-style: none;
+  }
+  
+  a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+  }
+  
+  :root {
+      --main_color_orange: #fa9e1b;
+      --main_color_black: #020202;
+      --gradient_color: #8d4fff;
+  
+      --font_small: 12px;
+      --font_basic: 14px;
+      --font_logo: 30px;
+  }
+  
+  #wrap {
+      width: 100%;
+      height: auto;
+  }
+  
+  
+  header {
+      width: 100%;
+      height: 112px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: var(--main_color_black);
+  }
+  
+  #top {
+      width: 100%;
+      height: 660px;
+      position: relative;
+  }
+  
+  #slider {
+      width: 100%;
+      height: 100%;
+      background-color: #ddd;
+  }
+  
+  header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .item1 {
+      width: 100%;
+      height: 100%;
+      background-color:rgb(8, 8, 8);
+      margin-left: -10%;
+  }
+  
+  .item2 {
+      width: 507.5px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      margin-left: 180%;
+      margin-top: -60px;
+      
+      /* margin-top: -11.7%;
+      margin-left: 54.3%; */
+  }
+  
+  .item3 {
+      width: 320px;
+      height: 480px;
+      margin: 12px;
+      background-color: rgb(255, 0, 0);
+  }
+  
+  .author {
+      width: 200px;
+      height: 100%;
+      /* margin-top: 190px; */
+  }
+  
+  .user {
+      margin-top: 0%;
+      vertical-align: middle;
+  }
+  
+  .user2 {
+      width: 200px;
+      height: 40%;
+      margin:1%;
+      /* margin: 38%; */
+      /* margin-top: -19.7%; */
+  }
+  
+  .user3 {
+      width: 100px;
+      height: 100px;
+      /* margin: 62%;
+      margin-top: -47%; */
+  }
+
+
+footer#footer .widget .widget-title:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: #f44336;
+  top: 20px;
+  position: relative;
+  margin-left: 41%;
+
+
+
+
+
+
+
+
 }
+
 /* Extra Small Devices - Phones */
 @media screen and (max-width: 767px) {
   .mfp-container {
     overflow: hidden;
   }
   .row {
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -17px;
+    margin-left: -13px;
+    text-align: center;
   } 
   #order .order-content .entry-order-content #msform fieldset {
     width: 100%;
@@ -4930,7 +5072,7 @@ footer#footer .sub-footer .social-links a:hover {
     font-size: 18px;
   }
   .ticket-carousel .movie-image {
-    height: 340px;
+    height: 500px;
     margin-top: 20%;
     margin-right: -10%;  }
   .pv8 {
@@ -4941,8 +5083,9 @@ footer#footer .sub-footer .social-links a:hover {
   }
   .pv12,
   .pv11 {
-    padding-top: 40px;
+    padding-top: 0px;
     padding-bottom: 40px;
+
   }
   .pvt85 {
     padding-top: 40px;
@@ -5120,7 +5263,130 @@ footer#footer .sub-footer .social-links a:hover {
   .blog-container .blog-item .post-image {
     height: 220px;
   }
+
+  ul,
+  ol,
+  li {
+      list-style: none;
+  }
+  
+  a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+  }
+  
+  :root {
+      --main_color_orange: #fa9e1b;
+      --main_color_black: #020202;
+      --gradient_color: #8d4fff;
+  
+      --font_small: 12px;
+      --font_basic: 14px;
+      --font_logo: 30px;
+  }
+  
+  #wrap {
+      width: 100%;
+      height: auto;
+  }
+  
+  
+  header {
+      width: 100%;
+      height: 112px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: var(--main_color_black);
+  }
+  
+  #top {
+      width: 100%;
+      height: 660px;
+      position: relative;
+  }
+  
+  #slider {
+      width: 100%;
+      height: 100%;
+      background-color: #ddd;
+  }
+  
+  header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .item1 {
+      width: 100%;
+      height: 100%;
+      background-color:rgb(8, 8, 8);
+      margin-left: -25%;
+  }
+  
+  .item2 {
+      width: 507.5px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      margin-left: 165%;
+      margin-top: -60px;
+      
+      /* margin-top: -11.7%;
+      margin-left: 54.3%; */
+  }
+  
+  .item3 {
+      width: 320px;
+      height: 480px;
+      margin: 12px;
+      background-color: rgb(255, 0, 0);
+  }
+  
+  .author {
+      width: 200px;
+      height: 100%;
+      /* margin-top: 190px; */
+  }
+  
+  .user {
+      margin-top: 0%;
+      vertical-align: middle;
+  }
+  
+  .user2 {
+      width: 200px;
+      height: 40%;
+      margin:1%;
+      /* margin: 38%; */
+      /* margin-top: -19.7%; */
+  }
+  
+  .user3 {
+      width: 100px;
+      height: 100px;
+      /* margin: 62%;
+      margin-top: -47%; */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
 @media (max-width: 320px) {
   .chart-cirle {
     display: none !important;
@@ -5139,4 +5405,5 @@ footer#footer .sub-footer .social-links a:hover {
 ====================================*/
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE10+ CSS styles go here */
+}
 }
