@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="css/packages.min.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+
+</head>
+<style>
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    #wrap {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        width: 1140px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 15px 0 15px;
+        border: 1px solid orange
+    }
+
+    #top {
+        width: 100%;
+        height: 800px;
+        position: relative;
+    }
+
+    #slider {
+        width: 100%;
+        height: 100%;
+        background-color: #ddd;
+    }
+
+    header {
+        width: 100%;
+        height: 180px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #topbar {
+        width: 100%;
+        height: 35px;
+        background-color: var(--main_color_purple);
+    }
+
+    #main_nav {
+        width: 100%;
+        height: 145px;
+        background-color: rgba(53, 10, 78, 0.6);
+    }
+
+    #search {
+        width: 100%;
+        height: 190px;
+        background: linear-gradient(to right, var(--main_color_orange), var(--gradient_color));
+    }
+
+    #intro {
+        width: 100%;
+        height: 500px;
+    }
+
+    #package {
+        width: 100%;
+        height: 300px;
+        background-color: gold;
+    }
+
+    #offer {
+        width: 100%;
+        height: 500px;
+        background-color: #f3f6f9;
+    }
+
+    footer {
+        width: 100%;
+        height: 300px;
+        background-color: var(--main_color_purple);
+    }
+
+    #footbar {
+        width: 100%;
+        height: 55px;
+        background-color: #1f0733;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    :root {
+        --main_color_orange: #fa9e1b;
+        --main_color_black: #020202;
+        --gradient_color: #8d4fff;
+
+        --font_small: 12px;
+        --font_basic: 14px;
+        --font_logo: 30px;
+    }
+
+    #wrap {
+        width: 100%;
+        height: auto;
+    }
+
+
+    header {
+        width: 100%;
+        height: 112px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--main_color_black);
+    }
+
+    #top {
+        width: 100%;
+        height: 660px;
+        position: relative;
+    }
+
+    #slider {
+        width: 100%;
+        height: 100%;
+        background-color: #ddd;
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .item1 {
+        width: 100px;
+        height: 100%;
+        background-color: rgb(8, 8, 8);
+        margin-left: 74%;
+    }
+
+    .item2 {
+        width: 487.5px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        margin-left: 254%;
+        margin-top: -29px;
+        /* margin-top: -11.7%;
+            margin-left: 54.3%; */
+    }
+
+    .item3 {
+        width: 320px;
+        height: 480px;
+        margin: 12px;
+        background-color: rgb(255, 0, 0);
+    }
+
+    .author {
+        width: 200px;
+        height: 100%;
+        /* margin-top: 190px; */
+    }
+
+    .user {
+        margin-top: 0%;
+        vertical-align: middle;
+    }
+
+     .user2 {
+        width: 200px;
+        height: 40%;
+        margin: 4%;
+        margin-top: -8.7%;
+    } 
+    .user3 {
+        width: 100px;
+        height: 100px;
+        margin-top: -46px;
+        /* margin: 62%;
+            margin-top: -47%; */
+    }
+
+    .author1 {
+        content: '|';
+        color: #fb802d;
+        margin-left: -6%;
+        margin-top: -9.6%;
+    }
+
+    .author2 {
+        content: '|';
+        color: #fb802d;
+        margin-left: 101%;
+        margin-top: -22.6%;
+    }
+    
+    .author3 {
+    content: '|';
+    color: #fb802d;
+    margin-left: 9%;
+    margin-top: -16.6%;
+    }
+
+    header#header .header_ticket span {
+        position: relative;
+        top: -45px;
+        color: #fff;
+        right: 5px;
+        background: #fb802d;
+        border-radius: 15px;
+        padding: 1px 5px;
+        font-size: 9px;
+        line-height: 12px;
+    }
+
+
+    span {
+        position: relative;
+    top: 13px;
+    color: #fff;
+    right: 5px;
+    background: #000000;
+    border-radius: 15px;
+    /* padding: 1px 5px; */
+    /* font-size: 9px; */
+    line-height: 12px;
+}
+
+.ph0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-left: 0px;
+  margin: -1%;
+  margin-top: 0%;
+}
+
+
+article.blog-item.single .post-content .content-meta .entry-title span {
+  /* position: absolute; */
+  left: 80px;
+  margin-top: 154px;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  opacity: .9;
+}
+
+article.blog-item.single .post-content .content-meta .entry-title:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #f44336;
+  top: 50px;
+  position: relative;
+}
+
+article.blog-item.single .post-content .content-meta .entry-title {
+  color: #fff;
+  font-style: normal;
+  text-transform: uppercase;
+  font-family: 'Montserrat-light', serif;
+  font-size: 28px;
+  letter-spacing: 0;
+  width: -1%;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+article.blog-item.single .content-footer {
+    display: block;
+    width: 90%;
+    line-height: 65px;
+    height: 77px;
+    background: #121616;
+    position: absolute;
+    bottom: 0;
+    left: 0;}
+
+    .single1{width: 100%; height: 100%; display: flex; background:orange;}
+    .single2{width:100%; height: 100%; display: flex; background: plum;}
+    .span2{width: 50%; height:100%; font-size: 16px; background-color: skyblue;}
+    .span3{width: 1000px; height: 100%; background-color: red;}
+    #h22{font-size: 42px;}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="top">
+            <header>
+                <div id="lnb">
+                    <ul>
+                        <li>
+                            <div class="container1">
+                                <div class="item1">
+                                    <img src="img/main.png" height="100">
+                                </div>
+
+                                <div>
+                                    <div class="item2">
+                                        <div class="author1">
+                                            <a href="#">Amanda Green</a>
+                                            <img src="img/icon0.png" height="39" class="user">
+                                            <div class="author2">|</div>
+                                        </div>
+
+                                        <div class="user2">
+                                            <a href="#">My tickets</a>
+                                            <a href="#" class="author2"></a>
+
+                                            <div class="author3">|</div>
+
+
+                                        </div>
+
+                                        <div class="user3">
+                                            <img src="img/icon9.png" height="32">
+                                            <img src="img/icon8.png" height="32">
+                                        </div>
+
+                                    </div>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <section class="section-content pv12 bg-cover" data-bg-image="img/k1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <article class="blog-item single">
+                                <div class="col-md-4 col-sm12 post-image hover-dark" data-bg-image="img/f1.jpg">
+                                    <a href="https://vimeo.com/90733749" class="video-player"><i
+                                            class="fa fa-play"></i></a>
+                                </div>
+                                <div class="col-md-8 col-sm-12 col-xs-12 ph0">
+                                    <div class="post-content bg-cover" data-bg-image="img/k.jpg">
+                                        <div class="content-meta">
+                                            <h2 class="entry-title">Captain America: Civil War
+                                                <span>Synopsis</span>
+                                            </h2>
+                                            <div class="social-links">
+                                                <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                                <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                                <a href="javascript:;"><i class="fa fa-user"></i></a>
+                                            </div>
+                                        </div>
+
+                                        <p class="entry-text">Hair removal appears in the air defense shelter. A video
+                                            was shown to
+                                            them on December 16, 1991, when Bucky stole Super
+                                            Soldier's serum, and the video showed Bucky brutally killing Tony Stark's
+                                            parents Howard
+                                            Stark and Maria Stark in a car
+                                            accident. Tony, who learned the truth about his parents' death after
+                                            watching the video,
+                                            is angry and asks Steve if he
+                                            knew the truth, and the captain answers, and Tony blows out the captain and
+                                            attacks
+                                            Bucky as if he were going to kill
+                                            him. Bucky protects himself and the captain starts fighting to save Bucky
+                                            and eventually
+                                            the three of them fall to the
+                                            ground</p>
+                                        <div class="info-content">
+                                            <ul class="item-info">
+                                                <li><span>Running Time:</span>
+                                                    <p>2hr 28 min</p>
+                                                </li>
+                                                <li><span>Genre:</span>
+                                                    <p>Action ,triller</p>
+                                                </li>
+                                                <li><span>Director:</span>
+                                                    <p>Anthony Russo</p>
+                                                </li>
+                                                <li><span>Cast:</span>
+                                                    <p>Chris Evans, Robert Downey Jr</p>
+                                                </li>
+                                                <li><span>Release Date:</span>
+                                                    <p>Fabruary 04,2016</p>
+                                                </li>
+                                            </ul>
+                                            <div class="item-info-rate">
+                                                <div class="chart-cirle">
+                                                    <div class="chart-circle-l">
+                                                        <div class="circle-chart" data-circle-width="7"
+                                                            data-percent="64" data-text="6.4">
+                                                        </div>
+                                                        <span>AMDB Rating</span>
+                                                    </div>
+                                                    <div class="chart-circle-r">
+                                                        <div class="circle-chart" data-circle-width="7"
+                                                            data-percent="84" data-text="8.4">
+                                                        </div>
+                                                        <span>Rotten Rating</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="wpc-skills animated">
+                                                    <div class="skill-block">
+                                                        <span class="timer" data-to="70" data-speed="500">70 -
+                                                            Metacritic
+                                                        </span>
+                                                        <div class="skill-line">
+                                                            <div class="line-fill" data-width-pb="70%"
+                                                                style="width: 70%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="skill-block">
+                                                        <span class="timer" data-to="56" data-speed="500"> 5.6 -
+                                                            Metacritic
+                                                        </span>
+                                                        <div class="skill-line">
+                                                            <div class="line-fill" data-width-pb="56%"
+                                                                style="width: 56%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-footer">
+                                            <span>Available time:</span>
+                                            <ul class="mdate">
+                                                <li><a href="javascript:;"><i>16:40</i></a></li>
+                                                <li><a href="javascript:;"><i>18:10</i></a></li>
+                                                <li><a href="javascript:;"><i>20:20</i></a></li>
+                                                <li><a href="javascript:;"><i>21:20</i></a></li>
+                                            </ul>
+                                            <a href="#orde" class="order_btn btn order text-right"> By ticket</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mt4">
+                            <div class="single-slider">
+                                <div class="swiper-container movie-images" id="singleslider" data-col="5">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="movie-image" data-bg-image="img/k4.jpg">
+                                                <div class="entry-hover">
+                                                    <div class="entry-actions">
+                                                        <a href="javascript:;" class="btn fill">More</a>
+                                                    </div>
+                                                </div>
+                                                <div class="entry-desc">
+                                                    <div class="rating">
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                    </div>
+                                                    <h3 class="entry-title">Iron Man 3</h3>
+                                                    <ul class="entry-date">
+                                                        <li>5 May 2010</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="movie-image" data-bg-image="img/k6.jpg">
+                                                <div class="entry-hover">
+                                                    <div class="entry-actions">
+                                                        <a href="javascript:;" class="btn fill">More</a>
+                                                    </div>
+                                                </div>
+                                                <div class="entry-desc">
+                                                    <div class="rating">
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                    </div>
+                                                    <h3 class="entry-title">The Avengers
+                                                    </h3>
+                                                    <ul class="entry-date">
+                                                        <li>5 May 2017</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="movie-image" data-bg-image="img/k7.jpg">
+                                                <div class="entry-hover">
+                                                    <div class="entry-actions">
+                                                        <a href="javascript:;" class="btn fill">More</a>
+                                                    </div>
+                                                </div>
+                                                <div class="entry-desc">
+                                                    <div class="rating">
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                    </div>
+                                                    <h3 class="entry-title">Avengers: Age of Ultron</h3>
+                                                    <ul class="entry-date">
+                                                        <li>5 May 2017</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="movie-image" data-bg-image="img/k8.jpg">
+                                                <div class="entry-hover">
+                                                    <div class="entry-actions">
+                                                        <a href="javascript:;" class="btn fill">More</a>
+                                                    </div>
+                                                </div>
+                                                <div class="entry-desc">
+                                                    <div class="rating">
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                    </div>
+                                                    <h3 class="entry-title">Guardians of the Galaxy Vol</h3>
+                                                    <ul class="entry-date">
+                                                        <li>5 May 2017</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="movie-image" data-bg-image="img/k2.jpg">
+                                                <div class="entry-hover">
+                                                    <div class="entry-actions">
+                                                        <a href="javascript:;" class="btn fill">More</a>
+                                                    </div>
+                                                </div>
+                                                <div class="entry-desc">
+                                                    <div class="rating">
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                    </div>
+                                                    <h3 class="entry-title">Iron Man 1</h3>
+                                                    <ul class="entry-date">
+                                                        <li>5 May 2017</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="movie-image" data-bg-image="img/k3.jpg">
+                                                <div class="entry-hover">
+                                                    <div class="entry-actions">
+                                                        <a href="javascript:;" class="btn fill">More</a>
+                                                    </div>
+                                                </div>
+                                                <div class="entry-desc">
+                                                    <div class="rating">
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                        <input name="stars" type="radio">
+                                                        <label>☆</label>
+                                                    </div>
+                                                    <h3 class="entry-title">Iron Man 2</h3>
+                                                    <ul class="entry-date">
+                                                        <li>5 May 2017</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="single1">
+                <div class="span2">
+                    <h2 id="h22">Movie review</h2>
+                    <img src="img/e2.png" height="100" alt="">
+                    <h3>VICTORIA</h3>
+                    <P>Antman > Spider-Man >> Captain America
+                        It deserves to be called the Avengers 2.5. Marvel mobilized all the hero corps to create a hot attraction. As the loveliness of the new Spider-Man and Ant-Man is outstanding, the charm of Captain America (Chris Evans), the owner of the movie, is not properly revealed.</P>
+                    
+                    
+                    <img src="img/e1.jpg" height="100" alt="">
+                    <h3>CHRISTOPHER</h3>
+                    <P>There are 12 superheroes. Brother Rousseau lived with Marvel Comics as a childDonnie's affection for each character is revealed. All are important and effective. The highlight is the airport action scene. It's a time of self-appealing as well as a fair for talented people. It is also the sequence in which humor is placed the most as if touching the embarrassing feelings of fans watching them fighting in a split way. It will be thrilling and tantalizing whether you are a fan of the previous works involved or not.</P>
+
+                </div>
+                <div class="span3">
+                    <h2 id="h22">LEABE A COMMENT</h2>
+                </div>
+            </div>
+
+
+            <div class="single2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.0705394047363!2d-73.9810681842865!3d40.760473242585036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f8c26f2a2d%3A0x6e943496b4aa545d!2zMTI5MCA2dGggQXZlLCBOZXcgWW9yaywgTlkgMTAxMDQg66-46rWt!5e0!3m2!1sko!2skr!4v1654676248616!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+                
+            
+            <script type="text/javascript" src="js/google-maps.js"></script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+            <footer id="footer">
+                <div class="container footer-container">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-6">
+                            <div class="widget">
+                                <h5 class="widget-title">Menu</h5>
+                                <ul class="menu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Coming soon</a></li>
+                                    <li><a href="#">Order</a></li>
+                                    <li><a href="#">Terms of service</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                </ul>
+                            </div>
+                            <div class="widget">
+                                <div class="social-links">
+                                    <a href="javascript:;"><i class="fa fa-facebook"></i></a>
+                                    <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+                                    <a href="javascript:;"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget">
+                                <h5 class="widget-title">Address information</h5>
+                                <p>
+                                    California. AMC Dine-In Theatres Marina,
+                                    Street 26, Distritc 543 #108
+                                </p>
+                                <p>
+                                    <i class="fa fa-mail"></i>Example@mail.com<br>
+                                    <i class="fa fa-phone"></i> + 123 456 7890
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-6">
+                            <div class="widget">
+                                <h5 class="widget-title">Leave a message</h5>
+                                <form class="contact_form transparent">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="inputValidation" name="name" placeholder="Name *">
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <input type="text" class="inputValidation" name="email"
+                                                placeholder="Email *">
+                                        </div>
+                                        <div class="col-sm-12 ">
+                                            <textarea class="inputValidation" placeholder="Message *"></textarea>
+                                            <button type="submit" class="button fill rectangle">Send to us</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="errorMessage"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-footer">
+                    <div class="container">
+                        <div class="row copyright-text">
+                            <div class="col-sm-12 text-center">
+                                <p class="mv3 mvt0">&copy; Copyrights 2017 Tenguu. All rights reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- Overlay Search -->
+        <div id="overlay-search">
+            <form method="get" action="./">
+                <input type="text" name="s" placeholder="Search..." autocomplete="off">
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+            <a href="javascript:;" class="close-window"></a>
+        </div>
+        <div id="order">
+            <div class="container">
+                <div class="row order-content">
+                    <div class="col-sm-8 col-xs-12 seat_content ph0">
+                        <h2>order a ticket</h2>
+                        <div class="entry-order-content">
+                            <form id="msform" name="msform">
+                                <!-- fieldsets -->
+                                <fieldset>
+                                    <div class="wpc-content">
+                                        <h3>location</h3>
+                                        <select name="location">
+                                            <option>Tenguu Cinema Tysons corner</option>
+                                            <option>Tenguu Cinema </option>
+                                            <option>Tenguu Cinema corner</option>
+                                            <option>Tenguu Cinema Tysons</option>
+                                        </select>
+                                        <h3 class="mt3">Movie</h3>
+                                        <select>
+                                            <option>Dead pool</option>
+                                            <option>THE BATTLE OF ALGIERS (DI ALGERI)</option>
+                                            <option>LORD OF THE RINGS: THE RETURN OF THE KINGS</option>
+                                            <option>Tenguu Cinema Tysons corner</option>
+                                        </select>
+                                        <h3 class="mt3">Date</h3>
+                                        <input type='date' class="datetime" />
+                                        <h3 class="mt3">TIME</h3>
+                                        <ul class="order-date">
+                                            <li><a href="javascript:;"><i>11:50</i></a></li>
+                                            <li><a href="javascript:;"><i>13:40</i></a></li>
+                                            <li><a href="javascript:;"><i>16:35</i></a></li>
+                                            <li><a href="javascript:;"><i>17:30</i></a></li>
+                                            <li><a href="javascript:;"><i>19:50</i></a></li>
+                                            <li><a href="javascript:;"><i>21:10</i></a></li>
+                                        </ul>
+                                    </div>
+                                    <input type="button" name="next" class="next action-button" value="Next" />
+                                </fieldset>
+                                <fieldset class="seat-content">
+                                    <div class="wpc-content">
+                                        <h3 class="seat_title">seat</h3>
+                                        <div id="seat-map"></div>
+                                        <div id="legend"></div>
+                                    </div>
+                                    <input type="button" name="previous" class="action-button previous"
+                                        value="Previous" />
+                                    <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 order_sidebar ph0">
+                        <h2>Your Information</h2>
+                        <div class="order-details">
+                            <span> Location:</span>
+                            <p id="locationp">Tenguu Cinema Tysons corner</p>
+                            <span>Time:</span>
+                            <p>2016.3.8 18:30</p>
+                            <span>Seat: </span>
+                            <ul id="selected-seats"></ul>
+                            <div>Tickets: <span id="counter">0</span></div>
+                            <div>Total: <b>$<span id="total">0</span></b></div>
+                        </div>
+                        <a href="javascript:;" class="close-window"><i class="fa fa-times"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Include jQuery and Scripts -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/packages.min.js"></script>
+        <script type="text/javascript" src="js/scripts.min.js"></script>
+        <!-- jQuery easing plugin -->
+</body>
+
+</html>
