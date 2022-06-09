@@ -5969,7 +5969,9 @@ pre code {
     }
 
     .col-sm-6 {
-        width: 50%
+        width: 45%;
+        margin-left: 15.1px;
+        margin-top: 0px;
     }
 
     .col-sm-5 {

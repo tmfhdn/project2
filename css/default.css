@@ -1068,7 +1068,7 @@ body.sticky-menu.stick #header.menu-top-left #header-search {
   }
 }
 .single-slider .swiper-button-prev::before {
-  content: '?��';
+  content: '<';
   font-family: Fontawesome;
   font-size: 27px;
 }
@@ -1081,7 +1081,7 @@ body.sticky-menu.stick #header.menu-top-left #header-search {
   }
 }
 .single-slider .swiper-button-next::before {
-  content: '?��';
+  content: '>';
   font-family: Fontawesome;
   font-size: 27px;
   margin-right: -3px;
@@ -2117,37 +2117,8 @@ article.blog-item.single .post-content .content-meta {
   width: 100%;
   display: inline-block;
 }
-article.blog-item.single .post-content .content-meta .entry-title {
-  color: #fff;
-  font-style: normal;
-  text-transform: uppercase;
-  font-family: 'Montserrat-light', serif;
-  font-size: 28px;
-  letter-spacing: 0;
-  width: 65%;
-  float: left;
-  margin: 0px;
-  padding: 0px;
-}
-article.blog-item.single .post-content .content-meta .entry-title:after {
-  content: '';
-  display: block;
-  width: 80px;
-  height: 3px;
-  background: #f44336;
-  top: 50px;
-  position: relative;
-}
-article.blog-item.single .post-content .content-meta .entry-title span {
-  position: absolute;
-  left: 80px;
-  margin-top: 46px;
-  text-transform: capitalize;
-  font-size: 18px;
-  font-family: 'Open Sans';
-  font-weight: 400;
-  opacity: .9;
-}
+
+
 article.blog-item.single .post-content .content-meta .social-links {
   float: right;
   padding-top: 5px;
@@ -3549,7 +3520,7 @@ header .container {
     width: 200px;
     height: 40%;
     /* margin: 38%; */
-    margin-top: 1.3%;
+    /* margin-top: -19.7%; */
 }
 
 .user3 {
@@ -3597,7 +3568,7 @@ header .container {
     content: '|';
     color: #fb802d;
     margin-left: 61%;
-    margin-top: -15.6%;
+    margin-top: -10.6%;
 }
 
 header#header .button_container {
@@ -4250,8 +4221,8 @@ footer#footer .sub-footer .social-links a:hover {
   padding-right: 160px;
 }
 .ph0 {
-  /* padding-left: 0px !important;
-  padding-right: 0px !important; */
+  padding-left: 0px !important;
+  padding-right: 0px !important;
   margin-left: 0px;
 }
 .phl0 {
