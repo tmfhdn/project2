@@ -554,6 +554,7 @@ body.sticky-menu.stick #header.menu-top-left #header-search {
 .ticket-carousel .carousel-container {
   padding: 30px 0;
   margin: 0 100px;
+  margin-top: -5%;
 }
 @media screen and (min-width: 1200px) and (max-width: 1350px) {
   .ticket-carousel .carousel-container {
@@ -920,6 +921,7 @@ body.sticky-menu.stick #header.menu-top-left #header-search {
 @media screen and (min-width: 768px) {
   .single-slider .swiper-container .swiper-slide {
     width: 228px;
+    
   }
 }
 .single-slider .swiper-container .swiper-slide .movie-image {
@@ -1362,11 +1364,11 @@ li {
 .section-content #slider_coming .product-item .entry-title .subtitle li {
   float: left;
   color: #fff;
-  font-family: 'Montserrat-light', serif;
+  /* font-family: 'Montserrat-light', serif; */
   font-weight: 200;
   padding-right: 20px;
   font-size: 14px;
-  opacity: .5;
+  opacity: 4.5;
 }
 .section-content #slider_coming .product-item .entry-title .subtitle li:after {
   content: '|';
@@ -1424,9 +1426,9 @@ li {
   border-bottom: 2px solid #272727;
 }
 .section-content #slider_coming .product-item .entry-desc .entry-text h3 {
-  font-family: 'Montserrat-light', serif;
+  /* font-family: 'Montserrat-light', serif; */
   font-size: 22px;
-  color: #fff;
+  color: #dfdfdf;
   text-transform: capitalize;
 }
 .section-content #slider_coming .product-item .entry-desc .entry-text p {
@@ -3601,7 +3603,7 @@ span {
     position: relative;
     top: -14px;
     color: #fff;
-    right: 5px;
+    right: -15px;
     background: #fb802d;
     border-radius: 15px;
     padding: 1px 5px;
@@ -4314,7 +4316,7 @@ footer#footer .sub-footer .social-links a:hover {
   padding-bottom: 101px;
 }
 .pv12 {
-  padding-top: 120px;
+  padding-top: 0%;
   padding-bottom: 120px;
   text-align : center;
 }
@@ -4343,6 +4345,7 @@ footer#footer .sub-footer .social-links a:hover {
 }
 .pvb0 {
   padding-bottom: 0px;
+  padding-top: 0%;
 }
 .pl0 {
   padding-left: 0 !important;
@@ -4701,6 +4704,12 @@ footer#footer .sub-footer .social-links a:hover {
     right: 2% !important;
   }
 
+  .user3 {
+    width: 100px;
+    height: 100px;
+    /* margin: 62%;
+    margin-top: -47%; */
+}
   .container {
     width: 1140px;
     height: 100%;
@@ -4809,6 +4818,11 @@ footer#footer .sub-footer .social-links a:hover {
 }
 /* Extra Small Devices - Phones */
 @media screen and (max-width: 767px) {
+
+  .swiper-container-autoheight, .swiper-container-autoheight .swiper-slide {
+    height: auto;
+    margin-top: -19%;
+}
 
   footer#footer .widget .widget-title:after {
     content: '';
@@ -4990,12 +5004,12 @@ article.blog-item.single .post-content .info-content .item-info-rate .chart-cirl
   .section-content #slider_coming .product-item .entry-title .title {
     font-size: 18px;
     margin-left: 5%;
-    margin-top: -4%;
+    margin-top: 52%;
   }
   .ticket-carousel .movie-image {
     margin: 17px;
     height: 522px;
-    margin-top: -2%;
+    margin-top: 33%;
     margin-right: 0%;  }
   .pv8 {
     padding: 0;
@@ -5009,7 +5023,7 @@ article.blog-item.single .post-content .info-content .item-info-rate .chart-cirl
     padding-bottom: 40px;
   }
   .pvt85 {
-    padding-top: 40px;
+    padding-top: 0px;
   }
   .header_author .user {
     display: none;
