@@ -1266,7 +1266,7 @@ figure {
 }
 
 .fa-user:before {
-    content: "\f007"
+    content: "⛔"
 }
 
 .fa-film:before {
@@ -2011,7 +2011,7 @@ figure {
 }
 
 .fa-google-plus:before {
-    content: "\f0d5"
+    content: "⛔"
 }
 
 .fa-money:before {
@@ -10959,7 +10959,6 @@ button.close {
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         -webkit-perspective: 1000;
-        perspective: 1000;
     }
 
     .carousel-inner>.item.active.right,
@@ -15046,7 +15045,6 @@ button.close {
     -webkit-box-shadow: '' 0 1px 4px rgba(0, 0, 0, .2);
     -moz-box-shadow: '' 0 1px 4px rgba(0, 0, 0, .2);
     -o-box-shadow: '' 0 1px 4px rgba(0, 0, 0, .2);
-    box-shadow: '' 0 1px 4px rgba(0, 0, 0, .2)
 }
 
 .flexslider .slides>li {
