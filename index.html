@@ -42,7 +42,7 @@
                                         <a href="javascript:;"></a>
                                     </div>
                                     <nav class="mNav">
-                                        <div class="closeBtn">X</div>
+                                        <div a href="#" class="closeBtn">X</a></div>
                                          <ul class="sub">
                                             <li><a href="index.html">Menu</a></li>
                                             <li><a href="service.html">Movie information</a></li>
@@ -95,13 +95,14 @@
             </header>
 
             <nav id="main_nav">
+                <ol class="carousel-indicators">
+                    <li data-target="#headerslider" data-slide-to="0" class="active"></li>
+                    <li data-target="#headerslider" data-slide-to="1"></li>
+                    <li data-target="#headerslider" data-slide-to="2"></li>
+                </ol>
                 <div class="fullwidth-slider">
+                    
                     <div id="headerslider" class="carousel slide">
-                        <ol class="carousel-indicators">
-                            <li data-target="#headerslider" data-slide-to="0" class="active"></li>
-                            <li data-target="#headerslider" data-slide-to="1"></li>
-                            <li data-target="#headerslider" data-slide-to="2"></li>
-                        </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
                                 <div class="fill" data-bg-image="img/a1.gif">
