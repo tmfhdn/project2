@@ -3485,11 +3485,11 @@ transition: all 0.25s ease;}
 
 #lnb.fixed {
     
-       width: 100%;
+  width: 100%;
 }
 
 #lnb ul {
-  margin-left: -1.2%;
+  margin-left: -2.2%;
   font-size: 0;
   background: #000000;
   width: 104%;
